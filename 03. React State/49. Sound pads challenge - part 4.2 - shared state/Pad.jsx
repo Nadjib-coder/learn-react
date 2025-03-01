@@ -1,17 +1,13 @@
-import React from "react"
+import React from 'react';
 
 export default function Pad(props) {
-    const [on, setOn] = React.useState(props.on)
-    
-    function toggle() {
-        setOn(prevOn => !prevOn)
-    }
+  const [on, setOn] = React.useState(props.on);
 
-    return (
-        <button 
-            style={{backgroundColor: props.color}}
-            className={on ? "on" : undefined}
-            onClick={toggle}
-        ></button>
-    )
+  return (
+    <button
+      style={{ backgroundColor: props.color }}
+      className={on ? 'on' : undefined}
+      onClick={props.toggleFunc}
+    ></button>
+  );
 }
