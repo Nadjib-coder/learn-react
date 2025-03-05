@@ -11,3 +11,6 @@ dist
 stats.html
 
 .eslintcache
+
+# envirenment variable file that contain very sensitive information
+.env
