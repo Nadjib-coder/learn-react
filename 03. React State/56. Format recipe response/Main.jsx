@@ -25,7 +25,7 @@ export default function Main() {
 
   return (
     <main>
-      <form action={addIngredient} className="add-ingredient-form">
+      <form onSubmit={addIngredient} className="add-ingredient-form">
         <input
           type="text"
           placeholder="e.g. oregano"
