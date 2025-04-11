@@ -62,3 +62,7 @@ button.roll-dice {
     color: white;
     font-size: 1.2rem;
 }
+
+.die.hold {
+    background-color: #59E391;
+}

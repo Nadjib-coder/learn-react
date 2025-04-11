@@ -1,5 +1,4 @@
 export default function Die(props) {
-    return (
-        <button>{props.value}</button>
-    )
+  const className = `${props.isHeld ? 'die hold' : 'die'}`;
+  return <button className={className}>{props.value}</button>;
 }
