@@ -1,12 +1,18 @@
 export default function Die(props) {
-    const styles = {
-        backgroundColor: props.isHeld ? "#59E391" : "white"
-    }
-    
-    return (
-        <button 
-            style={styles}
-            onClick={props.hold}
-        >{props.value}</button>
-    )
+  const styles = {
+    backgroundColor: props.isHeld ? '#59E391' : 'white',
+  };
+
+  return (
+    <button
+      style={styles}
+      onClick={props.hold}
+      aria-pressed={props.isHeld}
+      aria-label={`Die with value ${props.value}, ${
+        props.isHeld ? 'Held' : 'Not Held'
+      }`}
+    >
+      {props.value}
+    </button>
+  );
 }
